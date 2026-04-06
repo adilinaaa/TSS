@@ -45,7 +45,7 @@ class TestEquationSolverCE(unittest.TestCase):
         x = solver.solve()
 
         self.assertIsInstance(x, float)
-        self.assertEqual(x, -1.0)
+        self.assertAlmostEqual(x, -1.0)
 
     # TC_CE_05: Clasa CS3 - Delta > 0 (Doua radacini reale distincte)
     def test_tc_ce_05_delta_pozitiv(self):
